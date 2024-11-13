@@ -4,6 +4,7 @@ import DreamPlots from "@/components/organism/DreamPlots";
 import Footer from "@/components/organism/Footer";
 import Hero from "@/components/organism/Hero";
 import Property from "@/components/organism/Property";
+import Property_services from "@/components/organism/Property_services";
 import TopLocations from "@/components/organism/TopLocations";
 import TrendingNews from "@/components/organism/TrendingNews";
 
@@ -16,6 +17,7 @@ const page = () => {
             <DreamPlots />
             <Connectivity />
             <About />
+            <Property_services />
             <TrendingNews />
             <Footer />
         </>

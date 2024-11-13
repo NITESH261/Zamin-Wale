@@ -86,7 +86,7 @@ const Connectivity = () => {
                                                     </CardContent>
                                                 </Card>
                                             </DialogTrigger>
-                                            <DialogContent className="max-w-6xl">
+                                            <DialogContent className="max-w-4xl">
                                                 <DialogHeader>
                                                     <DialogTitle>{video.label}</DialogTitle>
                                                 </DialogHeader>
