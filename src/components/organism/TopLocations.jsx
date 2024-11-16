@@ -1,10 +1,7 @@
-"use client"
 
-import Autoplay from "embla-carousel-autoplay"
 import Image from "next/image"
 import Link from "next/link"
-import { Card, CardContent, CardHeader } from "../ui/card"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel"
+
 
 
 const Locations = [
@@ -60,56 +57,44 @@ const TopLocations = () => {
                             Top Locations
                         </h2>
                     </div>
-                    <div className="flex w-full">
-                        <Carousel
-                            plugins={[
-                                Autoplay({
-                                    delay: 3000,
-                                }),
-                            ]}
-                            opts={{
-                                align: "start",
-                                loop: true,
-                            }}
-                            className="flex w-full h-full"
-                        >
-                            <CarouselContent>
-                                {Locations.map((location, index) => (
-                                    <CarouselItem
-                                        key={`${index}-location-img`}
-                                        className="sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
-                                    >
-                                        <Link href={location.url} className="w-full">
-                                            <Card className="rounded-lg group hover:shadow-lg p-0 h-full w-full transition-all">
-                                                <CardHeader className="p-0 flex flex-grow-0 rounded-tl-lg">
-                                                    <div className="flex relative aspect-video rounded-t-lg overflow-hidden">
-                                                        <Image
-                                                            src={`/assets/top-locations/${location.img}`}
-                                                            alt="locations"
-                                                            fill
-                                                            className="rounded-lg object-cover group-hover:scale-110 transition-all object-center"
-                                                        />
-                                                    </div>
-                                                </CardHeader>
-                                                <CardContent className="w-full p-4">
-                                                    <div className="w-full space-y-2">
-                                                        <strong className="text-base">
-                                                            {location.label}
-                                                        </strong>
-                                                    </div>
-                                                </CardContent>
-                                            </Card>
-                                        </Link>
 
-                                    </CarouselItem>
-                                ))}
-                            </CarouselContent>
-                            <CarouselPrevious className="left-0 lg:-left-8" />
-                            <CarouselNext className="right-0 lg:-right-8" />
-                        </Carousel>
+
+                    <div className="flex w-full overflow-x-auto xl:overflow-x-hidden scrollbar-hide">
+                        <div className="flex xl:grid xl:grid-cols-4 gap-4 w-fit xl:w-full">
+                            {Locations.map((location, index) => (
+                                <div
+                                    key={`${index}-location-img`}
+                                    className="sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+                                >
+                                    <Link href={location.url} className="w-full">
+                                        <div className="rounded-lg group hover:shadow-lg p-0 h-full w-full transition-all">
+                                            <div className="p-0 flex flex-grow-0 rounded-tl-lg">
+                                                <div className="flex relative aspect-video rounded-t-lg overflow-hidden">
+                                                    <Image
+                                                        src={`/assets/top-locations/${location.img}`}
+                                                        alt="locations"
+                                                        fill
+                                                        className="rounded-lg object-cover group-hover:scale-110 transition-all object-center"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="w-full p-4">
+                                                <div className="w-full space-y-2">
+                                                    <strong className="text-base">
+                                                        {location.label}
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </Link>
+
+                                </div>
+                            ))}
+                        </div>
                     </div>
+
                 </div>
-            </div >
+            </div>
         </>
     )
 }

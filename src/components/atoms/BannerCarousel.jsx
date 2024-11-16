@@ -27,7 +27,7 @@ const BannerCarousel = () => {
                 }}
                 className="w-full"
             >
-                <CarouselContent className="w-full h-[30rem] flex ml-0">
+                <CarouselContent className="w-full h-[28rem] flex ml-0">
                     {BannerImages.map((card, index) => (
                         <CarouselItem
                             key={`${index}-img`}

@@ -24,7 +24,7 @@ const Property = () => {
             <div className="flex w-full">
                 <div className="flex flex-col gap-4 md:gap-6 w-full max-w-7xl mx-auto px-4 py-4 md:py-6 lg:py-8 xl:py-10">
                     <div className="flex w-full">
-                        <h2 className="text-lg font-bold md:text-xl lg:text-2xl">
+                        <h2 className="text-lg font-medium md:text-xl lg:text-2xl">
                             Popular Properties
                         </h2>
                     </div>
@@ -47,7 +47,7 @@ const Property = () => {
                                     <div className=" p-4 space-y-2">
                                         <div className="w-full">
                                             <span className="text-sm">1 BHK Flat</span>
-                                            <h2 className="text-lg font-semibold">
+                                            <h2 className="text-lg font-medium text-[#303030]">
                                                 &#8377; 30 Lac | 1000 sqft
                                             </h2>
                                         </div>
@@ -56,7 +56,7 @@ const Property = () => {
                                                 Vinay Nagar, Mumbai
                                             </p>
                                         </div>
-                                        <Button className="rounded-full">
+                                        <Button className="rounded-full bg-[#964B00]">
                                             View Details
                                         </Button>
                                     </div>

@@ -67,15 +67,15 @@ const SearchBar = () => {
                                                 className={cn(
                                                     "w-full justify-between",
                                                     !field.value &&
-                                                        "text-muted-foreground"
+                                                    "text-muted-foreground"
                                                 )}
                                             >
                                                 {field.value
                                                     ? PropertyLocations.find(
-                                                          (location) =>
-                                                              location.value ===
-                                                              field.value
-                                                      )?.label
+                                                        (location) =>
+                                                            location.value ===
+                                                            field.value
+                                                    )?.label
                                                     : "Select location"}
                                                 <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                                             </Button>
@@ -130,8 +130,8 @@ const SearchBar = () => {
                             </FormItem>
                         )}
                     />
-                    <Button type="submit" className="rounded-full">
-                        <Search/>
+                    <Button type="submit" className="rounded-full bg-[#964B00]">
+                        <Search />
                         Search</Button>
                 </form>
             </Form>

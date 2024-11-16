@@ -20,14 +20,14 @@ const About = () => {
                             Enjoy exclusive bungalow + plot offerings with 20+ amenities for the ultimate living experience. Moreover, connect with nature through farming opportunities We value sustainable living and the joy of growing your own veggies. That's why we offer plenty of space for farming. Whether you're experienced or new to gardening, our plots are perfect for unleashing your green thumb.
                         </p>
                         <div className="w-full space-x-4">
-                            <Button>Know More</Button>
-                            <Button>See Property Details</Button>
+                            <Button className="bg-[#964B00]">Know More</Button>
+                            <Button className="bg-[#964B00]">See Property Details</Button>
                         </div>
                     </div>
                     <div className="flex w-full">
                         <div className="flex relative aspect-video w-full rounded-t-lg overflow-hidden">
                             <Image
-                                src="/assets/banner-img/about-img.webp"
+                                src="/assets/house/house2.jpeg"
                                 alt="plots"
                                 fill
                                 className="rounded-lg object-cover object-center"
