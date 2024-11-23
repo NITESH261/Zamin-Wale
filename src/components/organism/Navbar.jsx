@@ -13,14 +13,14 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="flex sticky top-0 z-20 w-full bg-white border-b border-gray-200">
+        <div className="flex sticky top-0 z-20 w-full bg-blue-600 ">
             <div className="flex w-full h-16 items-center max-w-7xl mx-auto gap-4 px-4">
                 <div className="flex w-fit flex-grow-0">
                     <Logo />
                 </div>
                 <div className="hidden lg:flex flex-grow items-center justify-between h-full w-full gap-2">
                     <div className="flex w-full h-full justify-end">
-                        <ul className='flex w-fit h-full gap-6'>
+                        <ul className='flex w-fit  text-white h-full gap-6'>
                             {NavData.map((item, index) => (
                                 item.data ?
                                     (<li key={index} className='navlink w-fit h-full items-center flex group border-b-2 border-transparent hover:border-black transition-all'>
@@ -33,7 +33,7 @@ const Navbar = () => {
                                                         <ul className='flex w-full flex-col pl-3 gap-1 text-sm'>
                                                             {item.links.map((item, index) => (
                                                                 <li key={index} className='flex w-full'>
-                                                                    <Link href={"/"} className='hover:font-normal py-1 hover:underline transition-all'>{item.name}</Link>
+                                                                    <Link href={"/"} className='hover:font-normal  py-1 hover:underline transition-all'>{item.name}</Link>
                                                                 </li>
                                                             ))}
                                                         </ul>
@@ -51,7 +51,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="flex flex-grow items-center gap-4 justify-end">
-                    <Button variant="ghost" className="font-thin text-base hover:text-[#964B00]">
+                    <Button variant="ghost" className=" text-white font-thin text-base hover:text-[#964B00]">
                         <UserCircle2Icon className="h-14 w-14" />
                         Log In
                     </Button>
@@ -59,7 +59,7 @@ const Navbar = () => {
                         <SheetTrigger asChild>
                             <Button
                                 variant="ghost"
-                                className="rounded-md px-3 py-0"
+                                className=" text-white rounded-md px-3 py-0"
                             >
                                 <AlignRightIcon className="h-12 w-12" />
                             </Button>

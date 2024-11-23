@@ -112,7 +112,7 @@ const DreamPlots = () => {
                                             </CardHeader>
                                             <CardContent className="w-full p-4">
                                                 <div className="w-full space-y-2">
-                                                    <span className="text-base font-medium text-[#964B00]">
+                                                    <span className="text-base font-medium text-[#288ed2]">
                                                         {plot.title}
                                                     </span>
                                                     <p className="text-sm text-neutral-800">

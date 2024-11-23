@@ -61,7 +61,7 @@ const Property = () => {
                                                 Vinay Nagar, Mumbai
                                             </p>
                                         </div>
-                                        <Button className="rounded-full bg-[#964B00]">
+                                        <Button className="rounded-full bg-[#288ed2]">
                                             View Details
                                         </Button>
                                     </div>
