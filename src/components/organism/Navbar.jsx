@@ -13,7 +13,7 @@ import {
 
 const Navbar = () => {
     return (
-        <div className="flex sticky top-0 z-20 w-full bg-blue-600 ">
+        <div className="flex sticky top-0 z-20 w-full bg-[#0078DB] ">
             <div className="flex w-full h-16 items-center max-w-7xl mx-auto gap-4 px-4">
                 <div className="flex w-fit flex-grow-0">
                     <Logo />
