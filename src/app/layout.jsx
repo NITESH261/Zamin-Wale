@@ -35,6 +35,22 @@ const galanoGrotesque = localFont({
     variable: "--font-galano-Grotesque-alt",
 });
 
+const Montserrat = localFont({
+    src: [
+        {
+            path: "./fonts/Montserrat.ttf",
+            weight: "500",
+            style: "normal",
+        },
+        {
+            path: "./fonts/Montserrat-Italic.ttf",
+            weight: "500",
+            style: "italic",
+        }
+    ],
+    variable: "--font-Montserrat",
+});
+
 const nunito = Nunito({
     subsets: ['latin'],
     display: 'swap',
@@ -61,8 +77,8 @@ export default function MainLayout({ children }) {
         <html lang="en" suppressHydrationWarning>
             <body
                 className={cn(
-                    "h-screen flex flex-col font-galanoGrotesque w-screen overflow-hidden ",
-                    galanoGrotesque.variable, nunito.variable
+                    "h-screen flex flex-col font-Montserrat w-screen overflow-hidden ",
+                    Montserrat.variable, nunito.variable
                 )}
             >
                 <div className="flex relative w-full h-full flex-col overflow-y-auto items-start overflow-x-hidden scrollbar-hide md:scrollbar">

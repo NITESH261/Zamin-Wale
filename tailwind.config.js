@@ -9,7 +9,8 @@ module.exports = {
 	theme: {
 		fontFamily: {
 			galanoGrotesque: ["var(--font-galano-Grotesque-alt)"],
-			nunito: ["var(--font-nunito)"]
+			nunito: ["var(--font-nunito)"],
+			Montserrat: ["var(--font-Montserrat)"]
 		},
 		extend: {
 			backgroundImage: {

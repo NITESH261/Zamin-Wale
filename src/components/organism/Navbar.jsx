@@ -1,3 +1,4 @@
+'use client'; 
 import { AlignRightIcon, House, Tag, User } from "lucide-react";
 import Link from "next/link";
 import Logo from "../atoms/Logo";
@@ -11,9 +12,37 @@ import {
     SheetTrigger,
 } from "../ui/sheet";
 
+import { useState , useEffect } from "react";
+
 const Navbar = () => {
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            // If scrolled down more than 50px, change state to true
+            if (window.scrollY > 50) {
+                console.log("change")
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        // Attach the scroll event listener
+        window.addEventListener("scroll", handleScroll);
+
+        // Cleanup the event listener when the component unmounts
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
     return (
-        <div className="flex sticky top-0 font-nunito z-20 w-full bg-[#0078DB]">
+        <div className={`flex sticky top-0 font-nunito z-20 w-full transition-all duration-300 ${
+            isScrolled ? "bg-[#0078DB]" : "bg-transparent"
+        }`}
+        >
+
             <div className="flex w-full h-16 items-center max-w-7xl mx-auto gap-4 px-4">
                 <div className="flex w-fit">
                     <Logo />

@@ -1,3 +1,4 @@
+import PopularpropertySlider from "@/components/molecules/PopularpropertySlider";
 import About from "@/components/organism/About";
 import DreamPlots from "@/components/organism/DreamPlots";
 import Footer from "@/components/organism/Footer";
@@ -17,6 +18,7 @@ const page = () => {
             <DreamPlots />
             <About />
             <TrendingNews />
+            <PopularpropertySlider />
             <Footer />
         </>
     );
