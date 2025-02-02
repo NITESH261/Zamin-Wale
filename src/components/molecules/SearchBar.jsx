@@ -120,7 +120,7 @@ const SearchBar = () => {
                                                                 value={value}
                                                             />
                                                         </FormControl>
-                                                        <FormLabel className="font-normal">
+                                                        <FormLabel className="font-medium text-lg">
                                                             {label}
                                                         </FormLabel>
                                                     </FormItem>

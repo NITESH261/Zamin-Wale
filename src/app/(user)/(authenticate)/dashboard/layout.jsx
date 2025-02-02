@@ -11,7 +11,7 @@ const DashboardLayout = ({ children }) => {
         <SidebarProvider>
             <AppSidebar />
             <div className="flex w-full gap-4 h-[calc(100%-64px)] p-4">
-                <div className="flex w-full xl:w-3/4 flex-col gap-4 h-full">
+                <div className="flex w-full xl:w-full flex-col gap-4 h-full">
                     <div className="flex gap-4 items-center w-full px-4 rounded-lg border border-neutral-200">
                         <SidebarTrigger
                             className="h-10 w-10"
@@ -28,7 +28,7 @@ const DashboardLayout = ({ children }) => {
                     </div>
                     {children}
                 </div>
-                <div className="hidden xl:flex w-full xl:w-1/4 h-full border rounded-lg"></div>
+                {/* <div className="hidden xl:flex w-full xl:w-1/4 h-full border rounded-lg"></div> */}
             </div>
         </SidebarProvider>
     );

@@ -2,6 +2,7 @@
 
 import { getUserProperty } from "@/actions/dashboard";
 import DeletePropertyBtn from "@/components/atoms/DeletePropertyBtn";
+import SkeletonCard from "@/components/atoms/SkeletonCard";
 import ImageScroll from "@/components/molecules/ImageScroll";
 import { Button } from "@/components/ui/button";
 import { formatCurrency, sliceParagraph } from "@/lib/utils";
@@ -60,13 +61,14 @@ const page = () => {
             <div className="grid grid-cols-1 gap-4 w-full h-fit">
                 {properties.length === 0 ? (
                     <div className="flex items-center justify-center w-full flex-1">
-                        <div className="flex w-full aspect-square max-w-md relative">
-                            <Image
+                        <div className="flex w-full aspect-auto      max-w-md relative">
+                            {/* <Image
                                 src={"/assets/helper/404.png"}
                                 alt="404"
                                 fill
                                 className="object-contain"
-                            />
+                            /> */}
+                            <SkeletonCard />
                         </div>
                     </div>
                 ) : (

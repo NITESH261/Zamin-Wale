@@ -260,9 +260,9 @@ const page = async ({ params }) => {
                 </div>
             </div>
 
-            <CityImage city={result.locality} />
-
             <SendEnquiry cards={result.propertyPhotos} />
+
+            <CityImage city={result.locality} />
 
             <SimilarProperty />
 
