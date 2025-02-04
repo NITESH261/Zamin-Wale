@@ -17,7 +17,7 @@ const CityImage = ({ city }) => {
     const imageUrlMobile = cityImagesMobile[city] || "/assets/ads/main-ads-mobile.jpeg";
 
     return (
-        <div className="max-w-7xl w-full p-4 mx-auto mb-4 md:mb-6">
+        <div className="max-w-7xl w-full pt-11 mx-auto mb-4 md:mb-4">
             <div className="w-full border border-neutral-200 shadow h-40 relative rounded-2xl">
                 <Image
                     src={imageUrl}

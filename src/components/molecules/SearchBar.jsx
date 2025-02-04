@@ -111,9 +111,9 @@ const SearchBar = () => {
                                                         key={value}
                                                         className={`flex items-center justify-center space-y-0 ${field.value ===
                                                             value
-                                                            ? "bg-[#581a95] text-white"
+                                                            ? " border-b-[3px] border-[#581a95] text-black"
                                                             : "bg-white"
-                                                            } rounded-full py-1 px-1 md:px-4 md:py-2 md:h-full`}
+                                                            }  py-1 px-1 md:px-4 pointer-events-none md:pointer-events-auto md:py-2 md:h-full`}
                                                     >
                                                         <FormControl className="sr-only">
                                                             <RadioGroupItem
