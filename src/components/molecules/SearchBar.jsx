@@ -46,6 +46,10 @@ const SearchData = [
                 value: "thane",
             },
             {
+                label: "Khopoli Pali Road",
+                value: "khopoli-pali-road", 
+            },
+            {
                 label: "Panvel",
                 value: "panvel",
             },
