@@ -1303,6 +1303,10 @@ const FilterData = [
                 label: "Karjat",
                 value: "Karjat",
             },
+            {
+                label: "Palghar",
+                value: "Palghar",
+            },
         ],
     },
     {
