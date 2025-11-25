@@ -36,7 +36,6 @@ const Location = [
     { ranjanpada: "Ranjanpada" },
     { vindhane: "Vindhane" },
     { karjat: "Karjat" },
-    { Palghar: "Palghar" },
 ];
 
 const SearchTrigger = (locationId) => {
@@ -1291,10 +1290,6 @@ const FilterData = [
             {
                 label: "Karjat",
                 value: "Karjat",
-            },
-            {
-                label: "Palghar",
-                value: "Palghar",
             },
         ],
     },

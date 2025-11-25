@@ -402,10 +402,6 @@ const NavItems = [
                         label: "Karjat",
                         link: "/search/top-location/karjat",
                     },
-                    {
-                        label: "Palghar",
-                        link: "/search/top-location/Palghar",
-                    },
                 ],
             },
             // {

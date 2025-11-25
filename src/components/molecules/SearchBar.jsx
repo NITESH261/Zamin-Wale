@@ -77,10 +77,6 @@ const SearchData = [
                 label: "Karjat",
                 value: "karjat",
             },
-            {
-                label: "Palghar",
-                value: "Palghar",
-            },
         ],
     },
 ];

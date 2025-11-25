@@ -42,11 +42,6 @@ const Locations = [
         img: "img7.jpg",
         url: "/search/top-location/vindhane",
     },
-    {
-        label: "Palghar Plots",
-        img: "img7.jpg",
-        url: "/search/top-location/Palghar",
-    },
 ];
 
 const TopLocations = () => {
